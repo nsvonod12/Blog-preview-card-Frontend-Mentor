@@ -1,0 +1,147 @@
+:root{
+    --primary-color: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+html {
+    font-size: 62.5%; /* =10px */
+}
+
+body{
+    font-family: "Figtree", sans-serif;
+    background-color: var(--primary-color);
+}
+
+h1:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+p{
+    font-size: 13px;
+}
+
+.container {
+    max-width: 120rem;
+    width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 40rem;
+    height: 47rem;
+    border: solid 1px var(--Black);
+    border-radius: 2rem;
+    background-color: var(--White);
+    box-shadow: 10px 10px 1px black;
+}
+
+.card-content{
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.card-image{
+    width: 100%;
+    height: 20rem;
+    padding-top: 2rem;
+}
+
+.imagen{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.5rem;
+}
+
+.card-text{
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+.button{
+    border: none;
+    border-radius: 0.3rem;
+    background-color: var(--primary-color);
+    padding: .5rem 1rem;
+    font-weight: 800;
+}
+
+.text-button{
+    font-size: 14px;
+    margin: 0;
+}
+
+.text-gray{
+    color: var(--Grey);
+}
+
+.card-avatar{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    column-gap: 2rem;
+}
+
+.card-avatar p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.card-avatar img {
+    width: 3rem;
+}
+
+@media(width >= 375px){
+    h1{
+        font-size: 24px;;
+    }
+    
+    p{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .container {
+        width: 100%;
+    }
+    
+    .card{
+        width: 40rem;
+        height: 52rem;
+    }
+    
+    .card-content{
+        max-width: 87%;
+    }
+
+    .card-avatar{
+        gap: 1.5rem;
+    }
+    
+    .card-image{
+        padding-top: 2.5rem;
+    }
+    
+    .card-avatar p {
+        font-size: 14px;
+    }
+
+}
+
+.attribution{
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 2rem;
+}
+
+
+
